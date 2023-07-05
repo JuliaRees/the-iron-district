@@ -30,7 +30,7 @@ html {
   -moz-tab-size: 4; /* 3 */
   -o-tab-size: 4;
      tab-size: 4; /* 3 */
-  font-family: Montserrat, sans-serif; /* 4 */
+  font-family: Ysabeau SC, sans-serif; /* 4 */
   font-feature-settings: normal; /* 5 */
   font-variation-settings: normal; /* 6 */
 }
@@ -333,7 +333,6 @@ body {
 }
 h1, h2, h3, h4 {
   margin-bottom: 0.5em;
-  font-family: Titan One, serif;
 }
 h1 {
   font-size: 1.875rem;
@@ -466,15 +465,6 @@ p {
 .inset-0 {
   inset: 0px;
 }
-.bottom-\[-5\.2\%\] {
-  bottom: -5.2%;
-}
-.bottom-\[28\.9\%\;\] {
-  bottom: 28.9%;;
-}
-.left-0 {
-  left: 0px;
-}
 .left-4 {
   left: 1rem;
 }
@@ -484,14 +474,11 @@ p {
 .top-4 {
   top: 1rem;
 }
-.top-\[-5\.2\%\] {
-  top: -5.2%;
-}
-.top-\[-8\.2\%\] {
-  top: -8.2%;
-}
 .col-span-2 {
   grid-column: span 2 / span 2;
+}
+.m-14 {
+  margin: 3.5rem;
 }
 .mx-5 {
   margin-left: 1.25rem;
@@ -500,6 +487,10 @@ p {
 .mx-8 {
   margin-left: 2rem;
   margin-right: 2rem;
+}
+.my-14 {
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
 }
 .mb-14 {
   margin-bottom: 3.5rem;
@@ -546,10 +537,6 @@ p {
 .w-min {
   width: -moz-min-content;
   width: min-content;
-}
-.rotate-180 {
-  --tw-rotate: 180deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -619,6 +606,14 @@ p {
   --tw-bg-opacity: 1;
   background-color: rgb(254 192 1 / var(--tw-bg-opacity));
 }
+.bg-\[\#f4ebf0\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 235 240 / var(--tw-bg-opacity));
+}
+.bg-\[\#f7f5f6\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 245 246 / var(--tw-bg-opacity));
+}
 .bg-cover {
   background-size: cover;
 }
@@ -671,21 +666,17 @@ p {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
-.py-\[8\%\] {
-  padding-top: 8%;
-  padding-bottom: 8%;
-}
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.py-\[8\%\] {
+  padding-top: 8%;
+  padding-bottom: 8%;
 }
 .pb-15p {
   padding-bottom: 15%;
@@ -716,6 +707,10 @@ p {
 .uppercase {
   text-transform: uppercase;
 }
+.text-pink {
+  --tw-text-opacity: 1;
+  color: rgb(255 175 204 / var(--tw-text-opacity));
+}
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -735,27 +730,25 @@ a {
 }
 
 h1 {  
-    font-family: 'Titan One', cursive;
+    font-weight: 1000;
     font-size: 78px;
     letter-spacing: -3.5;
 }
 
 body h2 {
-    font-family: 'Montserrat', sans-serif;
     letter-spacing: .45em;
-    font-weight: 800;
+    font-weight: 900;
 }
 
 p {
-    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     letter-spacing: 4.5;
     line-height: 1.35;
-    font-weight: 400;
+    font-weight: 200;
 }
 
 body h3 {
-    font-weight: 800;
+    font-weight: 900;
     margin-bottom: 12%;
 }
 
@@ -777,15 +770,12 @@ label {
 
 
 footer h3 {
-    font-weight: 800;
+    font-weight: 900;
     margin-bottom: 3%;
 }
 
 
 @media (min-width: 640px) {
-  .sm\:bottom-\[-4\.2\%\;\] {
-    bottom: -4.2%;;
-  }
   .sm\:mt-0 {
     margin-top: 0px;
   }
@@ -806,9 +796,6 @@ footer h3 {
   }
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-  .sm\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
   .sm\:gap-4 {
     gap: 1rem;
@@ -838,9 +825,6 @@ footer h3 {
 
 
 @media (min-width: 768px) {
-  .md\:top-\[-5\.2\%\] {
-    top: -5.2%;
-  }
   .md\:block {
     display: block;
   }

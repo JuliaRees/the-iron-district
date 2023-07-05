@@ -8,13 +8,13 @@ module.exports = {
     ],
     theme: {
       fontFamily: {
-        sans: ['Montserrat', 'sans-serif'],
-        serif: ['Titan One', 'serif'],
+        sans: ['Ysabeau SC', 'sans-serif'],
       },
       colors: {
         'blue': 'blue',
         'purple': 'purple',
         'teal': 'teal',
+        'pink': '#ffafcc',
       }, 
       extend: {
         spacing: {
