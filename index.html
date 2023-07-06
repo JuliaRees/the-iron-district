@@ -7,8 +7,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@200;900;1000&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;900&display=swap" rel="stylesheet">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/assets/css/output-style.css">
@@ -17,7 +16,7 @@
 
 <!----------------HEADER---------------------->
 
-    <header class="flex justify-center items-center min-h-[65vh] sm:min-h-screen bg-top bg-cover text-pink bg-center" style="background-image: url('images/iron-1.png');">
+    <header class="flex justify-center items-center min-h-[65vh] sm:min-h-screen bg-cover text-pink bg-center" style="background-image: url('images/iron-1.png');">
 
         <nav class="absolute top-4 left-4">
             <a href="#" class="mx-8"> Logo </a>
@@ -30,7 +29,7 @@
         <a href="#" class="absolute top-4 right-4 border-2 rounded-full px-4 py-1"> Contact us </a>
 
         <div class="text-center">
-            <h1 class="text-6xl sm:text-9xl"> The <br> Iron District </h1>
+            <h1 class="text-6xl sm:text-[13rem]"> The <br> Iron District </h1>
             <h2 class="text-xl sm:text-3xl p-[3%]"> Your home in the heart of Berlin </h2>
             <a href="#" class="bg-black text-white rounded-full px-4 py-1"> Book now </a>
         </div>
@@ -41,21 +40,27 @@
 
     <section class="bg-[#f4ebf0] p-[5%] text-center">
 
-        <h2 class="mt-10 sm:mt-0"> Experience industrial living at its finest, where simplicity meets urban edge in the heart of Berlin. </h2>
+        <h2 class="mt-10 sm:mt-0 px-10p"> Experience industrial living at its finest, where simplicity meets urban edge in the heart of Berlin. </h2>
 
         <div class="sm:grid sm:grid-cols-3 sm:gap-4 mt-14">
-            <div> 
-                <img src="/images/iron-5.png" alt="" class="rounded-t-[45vw] sm:rounded-t-[20vw] rounded-b-[5rem]">
+            <div>
+                <div class="min-h-70 relative">
+                    <img src="/images/iron-5.png" alt="" class="border-4 p-1 border-black bg-center object-top absolute object-cover w-full h-full">
+                </div> 
                 <p class="py-10 sm:pt-10"> Exposed brick walls create a striking backdrop, showcasing the building's history and adding a touch of rugged character. Large windows allow natural light to flood the space, accentuating the raw beauty of the surroundings. </p>
             </div>
 
             <div> 
-                <img src="/images/iron-4.png" alt="" class="rounded-t-[45vw] sm:rounded-t-[20vw] rounded-b-[5rem]">
+                <div class="min-h-70 relative">
+                    <img src="/images/iron-4.png" alt="" class="border-4 p-1 border-black bg-center object-top absolute object-cover w-full h-full">
+                </div>
                 <p class="py-10 sm:pt-10"> Explore the neighborhood's industrial charm as you venture out to nearby cafes, eclectic shops, and acclaimed restaurants. Immerse yourself in Berlin's vibrant atmosphere, with iconic landmarks and attractions just a stone's throw away. </p>
             </div>
 
             <div> 
-                <img src="/images/iron-9.png" alt="" class="rounded-t-[45vw] sm:rounded-t-[20vw] rounded-b-[5rem]">
+                <div class="min-h-70 relative">
+                    <img src="/images/iron-9.png" alt="" class="border-4 p-1 border-black bg-center object-top absolute object-cover w-full h-full">
+                </div>
                 <p class="py-10 sm:pt-10"> Equipped with essential amenities, our apartments cater to your practical needs. Stay connected with high-speed Wi-Fi, relax in the no-frills living spaces, and take advantage of the fully-equipped kitchens featuring modern appliances. </p>
             </div>
 
@@ -72,7 +77,7 @@
             <img src="/images/iron-7.png" alt="" class="rounded-r-full sm:w-[120%] sm:max-w-[120%]">
         </div>
         
-        <div class="self-center p-5p sm:p-0 sm:pb-5p pb-15p">
+        <div class="self-center p-5p sm:p-0 sm:pb-5p pb-15p bg-gray-200">
         <h2 class="mt-[-8rem] sm:mt-0"> Duis aute irure </h2>
         <p class="py-5"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore provident, repellat facere natus consequatur suscipit incidunt unde illo inventore explicabo, in sunt dolores dolore odio excepturi, architecto eveniet. Dignissimos, quod!</p>
         <a href="#" class="bg-[#FE953D] rounded-full px-6 py-1"> Sign up </a>
@@ -82,13 +87,13 @@
 
 <!----------------YELLOW ORANGE SECTION---------------------->
 
-    <section class="md:grid md:grid-cols-2 bg-[#FE953D] ">
+    <section class="md:grid md:grid-cols-2 bg-[#f4ebf0] ">
          
-        <div class="bg-[#FEC001] pt-28 px-24 hidden md:block">
+        <div class="bg-[#f4ebf0] pt-28 px-24 hidden md:block">
             <img src="/images/iron-8.png" alt="door" class="rounded-t-full">
         </div>
         
-        <div class="self-end p-[10%] text-center md:text-left">
+        <div class="self-end p-[10%] text-center md:text-left bg-[#cccbcb] mb-[10%] -ml-[30%]">
         <h2 class="text-white"> Duis aute irure </h2>
         <p class="py-5"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore provident, repellat facere natus consequatur suscipit incidunt unde illo inventore explicabo, in sunt dolores dolore odio excepturi, architecto eveniet. Dignissimos, quod!</p>
         <a href="#" class="bg-[#EEC1DC] rounded-full px-6 py-1"> Buy now </a>
@@ -98,7 +103,7 @@
 
 <!----------------LONG LAMP---------------------->  
 
-    <section class="grid grid-cols-4 gap-8 bg-[#EEC1DC] py-8 md:py-16 items-center">
+    <section class="grid grid-cols-4 gap-8 bg-[#EEC1DC] py-8 md:py-16 items-center" style="background-image: url('images/iron-13.png');">
          
         <div class="col-span-2 aspect-[2] relative">
             <img src="/images/iron-10.png" alt="lamp" class="rounded-r-full absolute inset-0 h-full w-full object-cover">
@@ -117,7 +122,7 @@
 
 <!----------------CONTACT FORM---------------------->    
 
-    <section class="md:grid md:grid-cols-4 gap-2 bg-[#FE953D] px-[4%] py-[8%] relative">
+    <section class="md:grid md:grid-cols-4 gap-2 bg-[#f4ebf0] px-[4%] py-[8%] relative">
            
         <div class="col-span-2">
             <h2 class="uppercase"> Contact us </h2>
@@ -144,7 +149,7 @@
 
 <!----------------FOOTER---------------------->
 
-    <footer class="grid grid-cols-5 gap-12 bg-[#EEC1DC] uppercase p-[4%]">
+    <footer class="grid grid-cols-5 gap-12 bg-[#cccbcb] uppercase p-[4%]">
 
         <div>
             <h3> Lorem Ipsum </h3>
@@ -163,7 +168,7 @@
 
         <div class="col-span-2 text-right">
             <h3> Subscribe to our newsletter </h3>
-            <input type="email" name="_replyto" id="_replyto" placeholder=" " class="rounded-3xl bg-[#FE953D] ml-auto w-[50%]"/>
+            <input type="email" name="_replyto" id="_replyto" placeholder=" " class="rounded-3xl ml-auto w-[50%]"/>
             <a href="#" class="bg-black text-white rounded-full px-4 py-1"> Subscribe </a>
         </div>
 

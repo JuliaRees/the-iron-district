@@ -8,13 +8,14 @@ module.exports = {
     ],
     theme: {
       fontFamily: {
-        sans: ['Ysabeau SC', 'sans-serif'],
+        sans: ['Kanit', 'sans-serif'],
       },
       colors: {
         'blue': 'blue',
         'purple': 'purple',
         'teal': 'teal',
         'pink': '#ffafcc',
+        'black': '#000000',
       }, 
       extend: {
         spacing: {
