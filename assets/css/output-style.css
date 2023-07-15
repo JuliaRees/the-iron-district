@@ -459,6 +459,9 @@ p {
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
+.col-span-full {
+  grid-column: 1 / -1;
+}
 .mx-5 {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
@@ -466,10 +469,6 @@ p {
 .mx-8 {
   margin-left: 2rem;
   margin-right: 2rem;
-}
-.my-14 {
-  margin-top: 3.5rem;
-  margin-bottom: 3.5rem;
 }
 .-ml-\[30\%\] {
   margin-left: -30%;
@@ -516,9 +515,6 @@ p {
 .min-h-50 {
   min-height: 50vh;
 }
-.min-h-\[65vh\] {
-  min-height: 65vh;
-}
 .min-h-\[70vh\] {
   min-height: 70vh;
 }
@@ -535,17 +531,11 @@ p {
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
-.grid-cols-5 {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
 .items-center {
   align-items: center;
 }
 .justify-center {
   justify-content: center;
-}
-.gap-12 {
-  gap: 3rem;
 }
 .gap-2 {
   gap: 0.5rem;
@@ -610,6 +600,9 @@ p {
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+.bg-none {
+  background-image: none;
 }
 .bg-cover {
   background-size: cover;
@@ -690,6 +683,13 @@ p {
   padding-top: 8%;
   padding-bottom: 8%;
 }
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.pb-\[9\%\] {
+  padding-bottom: 9%;
+}
 .pr-\[36\%\] {
   padding-right: 36%;
 }
@@ -699,8 +699,8 @@ p {
 .pt-\[4\%\] {
   padding-top: 4%;
 }
-.pb-\[9\%\] {
-  padding-bottom: 9%;
+.pt-10 {
+  padding-top: 2.5rem;
 }
 .text-center {
   text-align: center;
@@ -719,6 +719,10 @@ p {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 .uppercase {
   text-transform: uppercase;
@@ -836,7 +840,11 @@ footer h3 {
     font-size: 1.5rem;
   }
 
-@media (min-width: 640px) {
+  .subtle {
+    opacity: .5;
+}
+
+  @media (min-width: 640px) {
   .sm\:mt-0 {
     margin-top: 0px;
   }
@@ -876,13 +884,19 @@ footer h3 {
   }
 }
 
-@media (min-width: 768px) {
+  @media (min-width: 768px) {
   .md\:my-14 {
     margin-top: 3.5rem;
     margin-bottom: 3.5rem;
   }
-  .md\:block {
-    display: block;
+  .md\:mb-\[22\%\] {
+    margin-bottom: 22%;
+  }
+  .md\:-ml-\[30\%\] {
+    margin-left: -30%;
+  }
+  .md\:mt-\[-8rem\] {
+    margin-top: -8rem;
   }
   .md\:grid {
     display: grid;
@@ -902,6 +916,20 @@ footer h3 {
   .md\:gap-12 {
     gap: 3rem;
   }
+  .md\:bg-\[\#deddd9\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(222 221 217 / var(--tw-bg-opacity));
+  }
+  .md\:bg-\[\#eae9e6\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(234 233 230 / var(--tw-bg-opacity));
+  }
+  .md\:bg-cover {
+    background-size: cover;
+  }
+  .md\:bg-center {
+    background-position: center;
+  }
   .md\:px-10p {
     padding-left: 10%;
     padding-right: 10%;
@@ -909,6 +937,20 @@ footer h3 {
   .md\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
+  }
+  .md\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  .md\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .md\:pt-5 {
+    padding-top: 1.25rem;
+  }
+  .md\:pr-\[36\%\] {
+    padding-right: 36%;
   }
   .md\:text-left {
     text-align: left;
