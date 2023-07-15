@@ -8,10 +8,6 @@
 
 @layer base {
 
-    body {
-        @apply border-8 sm:border-blue md:border-purple lg:border-teal;
-    }
-
     h1, h2, h3, h4  {
         @apply mb-[0.5em];
     }
@@ -49,7 +45,7 @@
     }
 
     .button  {
-        @apply inline-block px-4 py-2 uppercase tracking-wide bg-zinc-800 text-white ;
+        @apply inline-block px-6 py-4 uppercase tracking-wide bg-zinc-800 text-white ;
     }
     
 }
@@ -57,7 +53,6 @@
 h2,
 h3,
 a {
-    text-transform: uppercase;
     font-family: 'Kanit', sans-serif;
 }
 
