@@ -310,9 +310,6 @@ video {
 [hidden] {
   display: none;
 }
-h1, h2, h3, h4 {
-  margin-bottom: 0.5em;
-}
 h1 {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -447,8 +444,8 @@ p {
 .left-4 {
   left: 1rem;
 }
-.right-4 {
-  right: 1rem;
+.right-\[8rem\] {
+  right: 8rem;
 }
 .top-4 {
   top: 1rem;
@@ -521,6 +518,9 @@ p {
 }
 .min-h-\[65vh\] {
   min-height: 65vh;
+}
+.min-h-\[70vh\] {
+  min-height: 70vh;
 }
 .w-\[50\%\] {
   width: 50%;
@@ -699,14 +699,17 @@ p {
 .pt-\[4\%\] {
   padding-top: 4%;
 }
+.pb-\[9\%\] {
+  padding-bottom: 9%;
+}
 .text-center {
   text-align: center;
 }
 .text-right {
   text-align: right;
 }
-.text-6xl {
-  font-size: 3.75rem;
+.text-7xl {
+  font-size: 4.5rem;
   line-height: 1;
 }
 .text-base {
@@ -804,7 +807,7 @@ footer h3 {
     line-height: 0.8;
     position: fixed;
     right: 5%;
-    top: 4.5%;
+    top: 2%;
     z-index: 20;
 }
 
@@ -874,6 +877,10 @@ footer h3 {
 }
 
 @media (min-width: 768px) {
+  .md\:my-14 {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+  }
   .md\:block {
     display: block;
   }
@@ -888,6 +895,12 @@ footer h3 {
   }
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .md\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  .md\:gap-12 {
+    gap: 3rem;
   }
   .md\:px-10p {
     padding-left: 10%;
