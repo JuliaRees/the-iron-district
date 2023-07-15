@@ -1,24 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;900&display=swap" rel="stylesheet">
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/assets/css/output-style.css">
-</head>
-<body>
+---
+layout: default 
+title: Homepage
+seo: 
+ title: This should appear in the browser tab
+ description: 
+ keywords: 
+ social_image: 
+ hide-from-google: true
+---
 
 <!----------------HEADER---------------------->
 
     <header class="flex justify-center items-center min-h-[65vh] sm:min-h-screen bg-cover text-[#be8025] bg-center" style="background-image: url('images/iron-1.png');">
 
-        <nav class="absolute top-6 left-4">
+        <nav class="hidden sm:block absolute top-6 left-4">
             <a href="#" class="mx-8"> The Iron District </a>
            <!-----
             <a href="#" class="mx-5"> Nav 1 </a>
@@ -26,10 +21,23 @@
             <a href="#" class="mx-5"> Nav 3 </a>
             ----->
         </nav>
-        <a href="#" class="absolute top-4 right-4 border-2 border-[#be8025] rounded-full px-6 py-2 bg-black text-[#be8025]"> Book now </a>
+        <a href="#" class="hidden sm:block absolute top-4 right-4 border-2 border-[#be8025] rounded-full px-6 py-2 bg-black text-[#be8025]"> Book now </a>
+        <div>
+            <a class="hamburger-button"> &#9776; </a>
+        </div>
+        <div class="mobile-menu z-10">
+            <nav>
+                <a href="/services.html"> Services </a>
+                <a href="/portfolio.html"> Portfolio </a>
+                <a href="/process-pricing.html"> Process & Pricing </a>
+                <a href="/about.html"> About </a>
+                <a href="/contact.html"> Contact Us </a>
+            </nav>
+        </div>
+
 
         <div class="text-center">
-            <h1 class="text-6xl sm:text-[13rem] leading-[10rem]"> The <br> Iron District </h1>
+            <h1 class="text-6xl sm:text-[13rem] leading-[4rem] md:leading-[10rem]"> The <br> Iron District </h1>
             <h2 class="text-xl sm:text-3xl p-[3%]"> Your home in the heart of Berlin </h2>
             <a href="#" class="border-2 border-[#be8025] rounded-full px-6 py-2 bg-black text-[#be8025]"> Book now </a>
         </div>
@@ -40,28 +48,28 @@
 
     <section class="bg-[#deddd9] p-[5%] text-center">
 
-        <h2 class="mt-10 sm:mt-0 px-10p"> Experience industrial living at its finest, where simplicity meets urban edge in the heart of Berlin. </h2>
+        <h2 class="mt-10 sm:mt-0 md:px-10p text-base md:text-2xl"> Experience industrial living at its finest, where simplicity meets urban edge in the heart of Berlin. </h2>
 
         <div class="sm:grid sm:grid-cols-3 sm:gap-4 mt-14">
             <div>
-                <div class="min-h-70 relative">
+                <div class="min-h-50 md:min-h-70 relative">
                     <img src="/images/iron-5.png" alt="" class="border-4 p-1 border-black bg-center object-top absolute object-cover w-full h-full">
                 </div> 
                 <p class="py-10 sm:pt-10"> Exposed brick walls create a striking backdrop, showcasing the building's history and adding a touch of rugged character. </p>
             </div>
 
             <div> 
-                <div class="min-h-70 relative">
+                <div class="min-h-50 md:min-h-70 relative">
                     <img src="/images/iron-4.png" alt="" class="border-4 p-1 border-black bg-center object-top absolute object-cover w-full h-full">
                 </div>
                 <p class="py-10 sm:pt-10"> Explore the neighborhood's industrial charm as you venture out to nearby cafes, eclectic shops, and acclaimed restaurants. </p>
             </div>
 
             <div> 
-                <div class="min-h-70 relative">
+                <div class="min-h-50 md:min-h-70 relative">
                     <img src="/images/iron-9.png" alt="" class="border-4 p-1 border-black bg-center object-top absolute object-cover w-full h-full">
                 </div>
-                <p class="py-10 sm:pt-10"> Stay connected with high-speed Wi-Fi, relax in the no-frills living spaces, and take advantage of the fully-equipped kitchens featuring modern appliances. </p>
+                <p class="py-10 sm:pt-10"> Equipped with essential amenities, our apartments cater to your practical needs. Stay connected with high-speed Wi-Fi, relax in the no-frills living spaces, and take advantage of the fully-equipped kitchens featuring modern appliances. </p>
             </div>
 
             
@@ -184,5 +192,3 @@
     </footer>
 
     
-</body>
-</html>

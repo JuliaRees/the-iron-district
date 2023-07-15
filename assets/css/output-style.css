@@ -456,6 +456,9 @@ p {
 .top-6 {
   top: 1.5rem;
 }
+.z-10 {
+  z-index: 10;
+}
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -492,6 +495,9 @@ p {
 .mt-\[-8rem\] {
   margin-top: -8rem;
 }
+.block {
+  display: block;
+}
 .flex {
   display: flex;
 }
@@ -510,8 +516,8 @@ p {
 .h-full {
   height: 100%;
 }
-.min-h-70 {
-  min-height: 70vh;
+.min-h-50 {
+  min-height: 50vh;
 }
 .min-h-\[65vh\] {
   min-height: 65vh;
@@ -640,10 +646,6 @@ p {
 .p-\[5\%\] {
   padding: 5%;
 }
-.px-10p {
-  padding-left: 10%;
-  padding-right: 10%;
-}
 .px-24 {
   padding-left: 6rem;
   padding-right: 6rem;
@@ -707,6 +709,10 @@ p {
   font-size: 3.75rem;
   line-height: 1;
 }
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -714,8 +720,8 @@ p {
 .uppercase {
   text-transform: uppercase;
 }
-.leading-\[10rem\] {
-  line-height: 10rem;
+.leading-\[4rem\] {
+  line-height: 4rem;
 }
 .text-\[\#be8025\] {
   --tw-text-opacity: 1;
@@ -781,7 +787,6 @@ body textarea {
 }
 
 label {
-    font-weight: bold;
     padding: 3%;
 }
 
@@ -791,10 +796,49 @@ footer h3 {
     margin-bottom: 3%;
 }
 
+.hamburger-button {
+    cursor: pointer;
+    padding: 0.5rem;
+    display: inline-block;
+    font-size: 2.5rem;
+    line-height: 0.8;
+    position: fixed;
+    right: 5%;
+    top: 4.5%;
+    z-index: 20;
+}
+
+.hamburger-button.active {
+    color: pink;
+}
+
+.mobile-menu {
+    display: none;
+    background-color: #b5b5b5;
+    padding: 2rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    text-align: center;
+    text-transform: lowercase;
+    overflow-y: auto;
+}
+
+.mobile-menu a {
+    text-decoration: none; 
+    color: inherit; 
+    padding: 1rem;
+    display: block;
+    font-weight: normal;
+    font-size: 1.5rem;
+  }
 
 @media (min-width: 640px) {
   .sm\:mt-0 {
     margin-top: 0px;
+  }
+  .sm\:block {
+    display: block;
   }
   .sm\:grid {
     display: grid;
@@ -829,7 +873,6 @@ footer h3 {
   }
 }
 
-
 @media (min-width: 768px) {
   .md\:block {
     display: block;
@@ -837,11 +880,18 @@ footer h3 {
   .md\:grid {
     display: grid;
   }
+  .md\:min-h-70 {
+    min-height: 70vh;
+  }
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .md\:px-10p {
+    padding-left: 10%;
+    padding-right: 10%;
   }
   .md\:py-16 {
     padding-top: 4rem;
@@ -850,5 +900,11 @@ footer h3 {
   .md\:text-left {
     text-align: left;
   }
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .md\:leading-\[10rem\] {
+    line-height: 10rem;
+  }
 }
-
