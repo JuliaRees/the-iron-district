@@ -135,3 +135,19 @@ footer h3 {
   .subtle {
     opacity: .5;
 }
+
+
+.header-content {
+    margin-bottom: 20px; /* Add spacing between header content and booking widget */
+}
+
+.widgetHotelsForm p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    line-height: 20px;
+    padding: 0;
+    margin-bottom: 0;
+    font-stretch: semi-condensed;
+    /* Add any additional styling you want for these paragraphs */
+  }
+  

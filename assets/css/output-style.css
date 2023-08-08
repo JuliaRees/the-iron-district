@@ -453,10 +453,6 @@ h4 {
 .col-span-full {
   grid-column: 1 / -1;
 }
-.mx-5 {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
-}
 .mx-8 {
   margin-left: 2rem;
   margin-right: 2rem;
@@ -514,11 +510,11 @@ h4 {
   width: -moz-min-content;
   width: min-content;
 }
+.flex-col {
+  flex-direction: column;
+}
 .items-center {
   align-items: center;
-}
-.justify-center {
-  justify-content: center;
 }
 .gap-2 {
   gap: 0.5rem;
@@ -651,17 +647,20 @@ h4 {
 .pb-5 {
   padding-bottom: 1.25rem;
 }
+.pb-5p {
+  padding-bottom: 5%;
+}
 .pb-\[2\.5rem\] {
   padding-bottom: 2.5rem;
-}
-.pb-\[9\%\] {
-  padding-bottom: 9%;
 }
 .pt-5 {
   padding-top: 1.25rem;
 }
 .pt-5p {
   padding-top: 5%;
+}
+.pt-\[15\%\] {
+  padding-top: 15%;
 }
 .pt-\[2\.5rem\] {
   padding-top: 2.5rem;
@@ -811,16 +810,31 @@ footer h3 {
     opacity: .5;
 }
 
-  @media (min-width: 640px) {
+
+.header-content {
+    margin-bottom: 20px; /* Add spacing between header content and booking widget */
+}
+
+.widgetHotelsForm p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    line-height: 20px;
+    padding: 0;
+    margin-bottom: 0;
+    font-stretch: semi-condensed;
+    /* Add any additional styling you want for these paragraphs */
+  }
+
+@media (min-width: 640px) {
   .sm\:my-0 {
     margin-top: 0px;
     margin-bottom: 0px;
   }
-  .sm\:mt-0 {
-    margin-top: 0px;
-  }
   .sm\:mb-0 {
     margin-bottom: 0px;
+  }
+  .sm\:mt-0 {
+    margin-top: 0px;
   }
   .sm\:block {
     display: block;
@@ -843,14 +857,14 @@ footer h3 {
   .sm\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
+  .sm\:gap-12 {
+    gap: 3rem;
+  }
   .sm\:gap-4 {
     gap: 1rem;
   }
   .sm\:gap-8 {
     gap: 2rem;
-  }
-  .sm\:gap-12 {
-    gap: 3rem;
   }
   .sm\:bg-\[\#deddd9\] {
     --tw-bg-opacity: 1;
@@ -861,9 +875,6 @@ footer h3 {
   }
   .sm\:pt-10 {
     padding-top: 2.5rem;
-  }
-  .sm\:align-middle {
-    vertical-align: middle;
   }
   .sm\:text-3xl {
     font-size: 1.875rem;
@@ -877,20 +888,13 @@ footer h3 {
   }
 }
 
-  @media (min-width: 768px) {
-  .md\:my-0 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
+@media (min-width: 768px) {
   .md\:my-14 {
     margin-top: 3.5rem;
     margin-bottom: 3.5rem;
   }
   .md\:-ml-\[30\%\] {
     margin-left: -30%;
-  }
-  .md\:mb-0 {
-    margin-bottom: 0px;
   }
   .md\:mb-\[22\%\] {
     margin-bottom: 22%;
@@ -900,9 +904,6 @@ footer h3 {
   }
   .md\:mt-\[-8rem\] {
     margin-top: -8rem;
-  }
-  .md\:block {
-    display: block;
   }
   .md\:grid {
     display: grid;
@@ -921,15 +922,6 @@ footer h3 {
   }
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-  .md\:grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-  .md\:gap-12 {
-    gap: 3rem;
-  }
-  .md\:gap-8 {
-    gap: 2rem;
   }
   .md\:self-end {
     align-self: flex-end;
@@ -991,3 +983,4 @@ footer h3 {
     line-height: 10rem;
   }
 }
+  
