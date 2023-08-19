@@ -112,7 +112,7 @@ footer h3 {
 }
 
 .hamburger-menu span {
-    background-color: #000;
+    background-color: #b5b5b5;
     height: 4px;
     width: 100%;
     transition: transform 0.3s ease-in-out;

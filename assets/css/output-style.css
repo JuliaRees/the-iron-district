@@ -444,14 +444,17 @@ h4 {
 .top-6 {
   top: 1.5rem;
 }
+.z-10 {
+  z-index: 10;
+}
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
 .col-span-full {
   grid-column: 1 / -1;
-}
-.col-span-1 {
-  grid-column: span 1 / span 1;
 }
 .mx-8 {
   margin-left: 2rem;
@@ -461,14 +464,17 @@ h4 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
+.mb-0 {
+  margin-bottom: 0px;
+}
 .mb-5 {
   margin-bottom: 1.25rem;
 }
 .mb-\[2\.5rem\] {
   margin-bottom: 2.5rem;
 }
-.ml-auto {
-  margin-left: auto;
+.mr-20 {
+  margin-right: 5rem;
 }
 .mt-10 {
   margin-top: 2.5rem;
@@ -478,6 +484,9 @@ h4 {
 }
 .block {
   display: block;
+}
+.inline-block {
+  display: inline-block;
 }
 .flex {
   display: flex;
@@ -497,14 +506,11 @@ h4 {
 .min-h-50 {
   min-height: 50vh;
 }
-.min-h-\[70vh\] {
-  min-height: 70vh;
-}
 .min-h-70 {
   min-height: 70vh;
 }
-.w-\[50\%\] {
-  width: 50%;
+.min-h-\[70vh\] {
+  min-height: 70vh;
 }
 .w-full {
   width: 100%;
@@ -516,14 +522,25 @@ h4 {
 .flex-col {
   flex-direction: column;
 }
+.flex-wrap {
+  flex-wrap: wrap;
+}
 .items-center {
   align-items: center;
 }
 .justify-center {
   justify-content: center;
 }
+.justify-between {
+  justify-content: space-between;
+}
 .gap-2 {
   gap: 0.5rem;
+}
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 .self-center {
   align-self: center;
@@ -572,13 +589,13 @@ h4 {
   --tw-bg-opacity: 1;
   background-color: rgb(222 221 217 / var(--tw-bg-opacity));
 }
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
 .bg-\[\#f6f5f4\] {
   --tw-bg-opacity: 1;
   background-color: rgb(246 245 244 / var(--tw-bg-opacity));
+}
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 .bg-cover {
   background-size: cover;
@@ -660,6 +677,9 @@ h4 {
 .pb-5p {
   padding-bottom: 5%;
 }
+.pb-\[2\%\] {
+  padding-bottom: 2%;
+}
 .pb-\[2\.5rem\] {
   padding-bottom: 2.5rem;
 }
@@ -678,21 +698,18 @@ h4 {
 .pt-\[5\%\] {
   padding-top: 5%;
 }
-.pb-\[2\%\] {
-  padding-bottom: 2%;
-}
 .text-center {
   text-align: center;
-}
-.text-right {
-  text-align: right;
-}
-.align-middle {
-  vertical-align: middle;
 }
 .text-7xl {
   font-size: 4.5rem;
   line-height: 1;
+}
+.text-\[1\.3rem\] {
+  font-size: 1.3rem;
+}
+.text-\[2\.5rem\] {
+  font-size: 2.5rem;
 }
 .text-base {
   font-size: 1rem;
@@ -706,8 +723,14 @@ h4 {
   font-size: 0.75rem;
   line-height: 1rem;
 }
+.font-normal {
+  font-weight: 400;
+}
 .uppercase {
   text-transform: uppercase;
+}
+.lowercase {
+  text-transform: lowercase;
 }
 .leading-\[4rem\] {
   line-height: 4rem;
@@ -802,7 +825,7 @@ footer h3 {
 }
 
 .hamburger-menu span {
-    background-color: #000;
+    background-color: #b5b5b5;
     height: 4px;
     width: 100%;
     transition: transform 0.3s ease-in-out;
@@ -892,9 +915,6 @@ body .widgetHotelsForm .acessa_widget_block p {
   .sm\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
-  .sm\:grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
   .sm\:gap-12 {
     gap: 3rem;
   }
@@ -907,9 +927,6 @@ body .widgetHotelsForm .acessa_widget_block p {
   .sm\:bg-\[\#deddd9\] {
     --tw-bg-opacity: 1;
     background-color: rgb(222 221 217 / var(--tw-bg-opacity));
-  }
-  .sm\:p-5p {
-    padding: 5%;
   }
   .sm\:pt-10 {
     padding-top: 2.5rem;
@@ -931,20 +948,11 @@ body .widgetHotelsForm .acessa_widget_block p {
     margin-top: 3.5rem;
     margin-bottom: 3.5rem;
   }
-  .md\:-ml-\[30\%\] {
-    margin-left: -30%;
-  }
   .md\:mb-\[22\%\] {
     margin-bottom: 22%;
   }
   .md\:ml-auto {
     margin-left: auto;
-  }
-  .md\:mt-\[-8rem\] {
-    margin-top: -8rem;
-  }
-  .md\:-mr-\[30\%\] {
-    margin-right: -30%;
   }
   .md\:grid {
     display: grid;
@@ -952,37 +960,17 @@ body .widgetHotelsForm .acessa_widget_block p {
   .md\:min-h-70 {
     min-height: 70vh;
   }
-  .md\:w-\[120\%\] {
-    width: 120%;
-  }
-  .md\:max-w-\[120\%\] {
-    max-width: 120%;
-  }
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
   .md\:self-end {
     align-self: flex-end;
   }
-  .md\:bg-\[\#deddd9\] {
-    --tw-bg-opacity: 1;
-    background-color: rgb(222 221 217 / var(--tw-bg-opacity));
-  }
-  .md\:bg-\[\#eae9e6\] {
-    --tw-bg-opacity: 1;
-    background-color: rgb(234 233 230 / var(--tw-bg-opacity));
-  }
   .md\:bg-none {
     background-image: none;
-  }
-  .md\:p-\[4\%\] {
-    padding: 4%;
   }
   .md\:p-\[5\%\] {
     padding: 5%;
@@ -991,21 +979,9 @@ body .widgetHotelsForm .acessa_widget_block p {
     padding-left: 10%;
     padding-right: 10%;
   }
-  .md\:px-24 {
-    padding-left: 6rem;
-    padding-right: 6rem;
-  }
-  .md\:py-0 {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
   .md\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
-  }
-  .md\:py-20 {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
   }
   .md\:pr-\[36\%\] {
     padding-right: 36%;
