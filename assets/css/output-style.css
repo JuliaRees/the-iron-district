@@ -432,14 +432,11 @@ h4 {
 .inset-0 {
   inset: 0px;
 }
-.left-4 {
-  left: 1rem;
+.left-0 {
+  left: 0px;
 }
-.right-\[8rem\] {
-  right: 8rem;
-}
-.top-6 {
-  top: 1.5rem;
+.top-0 {
+  top: 0px;
 }
 .z-10 {
   z-index: 10;
@@ -488,6 +485,9 @@ h4 {
 .flex {
   display: flex;
 }
+.table {
+  display: table;
+}
 .hidden {
   display: none;
 }
@@ -502,9 +502,6 @@ h4 {
 }
 .min-h-50 {
   min-height: 50vh;
-}
-.min-h-70 {
-  min-height: 70vh;
 }
 .min-h-\[70vh\] {
   min-height: 70vh;
@@ -534,10 +531,8 @@ h4 {
 .gap-2 {
   gap: 0.5rem;
 }
-.space-x-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1rem * var(--tw-space-x-reverse));
-  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+.gap-4 {
+  gap: 1rem;
 }
 .self-center {
   align-self: center;
@@ -752,6 +747,8 @@ h4 {
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 
+
+
 html {
     scroll-behavior: smooth;
   }
@@ -809,39 +806,39 @@ footer h3 {
     margin-bottom: 3%;
 }
 
-.hamburger-wrapper {
-    cursor: pointer;
+.hamburger-button {
     display: inline-block;
-    right: 5%;
-    top: 5.5%;
-    z-index: 1000;
-}
-
-.hamburger-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 24px;
+    cursor: pointer;
+    position: relative;
+    width: 20px;
     height: 20px;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
 }
 
-.hamburger-menu span {
-    background-color: #b5b5b5;
-    height: 4px;
+.hamburger-button span {
+    display: block;
+    position: absolute;
+    height: 2px;
     width: 100%;
-    transition: transform 0.3s ease-in-out;
+    background: white;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
 }
 
-.hamburger-menu.active span:first-child {
-    transform: translateY(8px) rotate(45deg);
+.hamburger-button span:nth-child(1) {
+    top: 0px;
 }
 
-.hamburger-menu.active span:nth-child(2) {
-    opacity: 0;
+.hamburger-button span:nth-child(2), .hamburger-button span:nth-child(3) {
+    top: 7px;
 }
 
-.hamburger-menu.active span:last-child {
-    transform: translateY(-8px) rotate(-45deg);
+.hamburger-button span:nth-child(4) {
+    top: 14px;
 }
 
 .mobile-menu {
@@ -878,15 +875,71 @@ footer h3 {
     margin-bottom: 20px; 
 }
 
-body .widgetHotelsForm .acessa_widget_block p {
-    font-family: 'Kanit', sans-serif;
-    font-size: 1.5rem;
-    line-height: 2;
-    padding: 0;
-    margin-bottom: 0;
-    letter-spacing: .45em;
-  }
 
+
+.cta-buttons {
+    transition: background-color 0.3s ease;
+}
+
+.cta-buttons a:hover {
+    background-color: #2b2b2d;
+}
+
+
+.booking-widget-container {
+    background-color: #f6f6f6;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.booking-widget-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.booking-widget-container p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.booking-widget-container a {
+    display: inline-block;
+    background-color: #be8025;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.booking-widget-container a:hover {
+    background-color: #d49e3b;
+}
+
+.booking-widget-container a:focus {
+    outline: none;
+}
+
+
+/* Existing styles for the close button */
+.close-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+
+/* Additional style to hide the close button initially */
+.mobile-menu:not(.active) .close-button {
+    display: none;
+}
 @media (min-width: 640px) {
   .sm\:my-0 {
     margin-top: 0px;
@@ -901,8 +954,14 @@ body .widgetHotelsForm .acessa_widget_block p {
   .sm\:block {
     display: block;
   }
+  .sm\:flex {
+    display: flex;
+  }
   .sm\:grid {
     display: grid;
+  }
+  .sm\:min-h-70 {
+    min-height: 70vh;
   }
   .sm\:min-h-screen {
     min-height: 100vh;
@@ -943,7 +1002,6 @@ body .widgetHotelsForm .acessa_widget_block p {
     line-height: 8rem;
   }
 }
-
 @media (min-width: 768px) {
   .md\:my-14 {
     margin-top: 3.5rem;
@@ -1004,4 +1062,3 @@ body .widgetHotelsForm .acessa_widget_block p {
     line-height: 10rem;
   }
 }
-  
