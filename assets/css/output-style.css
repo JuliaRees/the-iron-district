@@ -648,6 +648,9 @@ h4 {
   padding-top: 4%;
   padding-bottom: 4%;
 }
+.pb-10p {
+  padding-bottom: 10%;
+}
 .pb-5 {
   padding-bottom: 1.25rem;
 }
@@ -660,14 +663,14 @@ h4 {
 .pb-\[2\.5rem\] {
   padding-bottom: 2.5rem;
 }
+.pt-10p {
+  padding-top: 10%;
+}
 .pt-5 {
   padding-top: 1.25rem;
 }
 .pt-5p {
   padding-top: 5%;
-}
-.pt-\[15\%\] {
-  padding-top: 15%;
 }
 .pt-\[2\.5rem\] {
   padding-top: 2.5rem;
@@ -677,12 +680,6 @@ h4 {
 }
 .pt-\[78\%\] {
   padding-top: 78%;
-}
-.pb-10p {
-  padding-bottom: 10%;
-}
-.pt-10p {
-  padding-top: 10%;
 }
 .text-center {
   text-align: center;
@@ -702,6 +699,9 @@ h4 {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+.font-extralight {
+  font-weight: 200;
 }
 .uppercase {
   text-transform: uppercase;
@@ -804,8 +804,8 @@ footer h3 {
 
 
 .booking-widget-container {
-    background-color: #f6f6f6;
-    padding: 2rem;
+    background-color: #d2d1cb;
+    padding: 3rem;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -891,17 +891,17 @@ body .widgetHotelsForm .acessa_widget_block p {
     --tw-bg-opacity: 1;
     background-color: rgb(222 221 217 / var(--tw-bg-opacity));
   }
-  .sm\:pt-10 {
-    padding-top: 2.5rem;
-  }
-  .sm\:pt-\[15\%\] {
-    padding-top: 15%;
-  }
   .sm\:pb-5p {
     padding-bottom: 5%;
   }
   .sm\:pt-0 {
     padding-top: 0px;
+  }
+  .sm\:pt-10 {
+    padding-top: 2.5rem;
+  }
+  .sm\:pt-\[15\%\] {
+    padding-top: 15%;
   }
   .sm\:text-3xl {
     font-size: 1.875rem;
