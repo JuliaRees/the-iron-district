@@ -960,6 +960,9 @@ body .widgetHotelsForm .acessa_widget_block p {
   .md\:pt-5 {
     padding-top: 1.25rem;
   }
+  .md\:pb-0 {
+    padding-bottom: 0px;
+  }
   .md\:text-left {
     text-align: left;
   }
