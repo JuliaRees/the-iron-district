@@ -100,7 +100,6 @@ label {
     padding: 3%;
 }
 
-
 footer h3 {
     font-weight: 400;
     margin-bottom: 3%;
@@ -109,7 +108,6 @@ footer h3 {
 .subtle {
     opacity: .5;
 }
-
 
 .header-content {
     margin-bottom: 20px; 
@@ -143,12 +141,6 @@ footer h3 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-@media (min-width: 365px) {
-    .booking-widget-container {
-        padding-bottom: 10%;
-    }   
-}
-
 
 .booking-widget-container h2 {
     font-size: 1.5rem;
@@ -167,38 +159,9 @@ body .widgetHotelsForm .acessa_widget_block p {
     outline: none;
 }
 
-
 .custom-height {
-    height: 350px; 
+    height: 420px; 
   }
-
-@media (min-width: 768px) {
-    .custom-height {
-        height: 490px; 
-    }
-}
-
-@media (min-width: 1536px) {
-    .custom-height {
-        height: 750px; 
-    }
-}
-
-
-
-
-/* ------- MD Media Query (64em / 1024px) --------------- */ 
-/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
-
-@media (min-width: 640px) {
-    .widgetHotelsForm .horizontal-widget a.submit_link {
-        margin-bottom: 0;
-    }
-}
-
-
-/*ml-auto w-min*/ 
-
 
 .submit-button {
     background-color: #cccbcb;
@@ -215,17 +178,35 @@ body .widgetHotelsForm .acessa_widget_block p {
     background-color: #b3b1b1;
   }
 
-
-
-
 .padding-header {
     padding-top: 50%;
 }  
 
-  @media (min-width: 500px) {
+@media (min-width: 365px) {
+    .booking-widget-container {
+        padding-bottom: 10%;
+    }   
+}
+
+@media (min-width: 400px) {
+    .padding-header {
+        padding-top: 35%;
+      }  
+    .custom-height {
+        height: 470px;
+      }
+}
+
+@media (min-width: 500px) {
     .padding-header {
         padding-top: 40%;
     }   
+}
+
+@media (min-width: 640px) {
+    .widgetHotelsForm .horizontal-widget a.submit_link {
+        margin-bottom: 0;
+    }
 }
 
 @media (min-width: 767px) {
@@ -241,6 +222,10 @@ body .widgetHotelsForm .acessa_widget_block p {
         padding-bottom: 5%;
         padding-top: 5%;
     } 
+
+    .custom-height {
+        height: 490px; 
+    }
 }
 
 @media (min-width: 1130px) {
@@ -259,4 +244,11 @@ body .widgetHotelsForm .acessa_widget_block p {
     .padding-header {
         padding-top: 20%;
     }   
+}
+
+
+@media (min-width: 1536px) {
+    .custom-height {
+        height: 750px; 
+    }
 }
