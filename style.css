@@ -167,9 +167,23 @@ body .widgetHotelsForm .acessa_widget_block p {
     outline: none;
 }
 
+
 .custom-height {
-    height: 300px; /* Set your desired height here */
+    height: 350px; 
   }
+
+@media (min-width: 768px) {
+    .custom-height {
+        height: 490px; 
+    }
+}
+
+@media (min-width: 1536px) {
+    .custom-height {
+        height: 750px; 
+    }
+}
+
 
 
 
