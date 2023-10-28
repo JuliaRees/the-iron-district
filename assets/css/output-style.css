@@ -837,7 +837,7 @@ body .widgetHotelsForm .acessa_widget_block p {
   }
 
 .padding-header {
-    padding-top: 50%;
+    padding-top: 40%;
 }  
 
 .bg-adjust {
@@ -888,8 +888,8 @@ body .widgetHotelsForm .acessa_widget_block p {
 
 @media (min-width: 767px) {
     .padding-header {
-        padding-top: 30%;
-    }   
+        padding-top: 22%;
+      } 
 
     body .widgetHotelsForm .acessa_widget_block p {
         font-size: 20px;
@@ -979,11 +979,12 @@ body .widgetHotelsForm .acessa_widget_block p {
   .sm\:gap-12 {
     gap: 3rem;
   }
-  .sm\:gap-8 {
-    gap: 2rem;
-  }
   .sm\:self-center {
     align-self: center;
+  }
+  .sm\:px-10p {
+    padding-left: 10%;
+    padding-right: 10%;
   }
   .sm\:py-10p {
     padding-top: 10%;

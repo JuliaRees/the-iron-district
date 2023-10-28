@@ -179,7 +179,7 @@ body .widgetHotelsForm .acessa_widget_block p {
   }
 
 .padding-header {
-    padding-top: 50%;
+    padding-top: 40%;
 }  
 
 .bg-adjust {
@@ -230,8 +230,8 @@ body .widgetHotelsForm .acessa_widget_block p {
 
 @media (min-width: 767px) {
     .padding-header {
-        padding-top: 30%;
-    }   
+        padding-top: 22%;
+      } 
 
     body .widgetHotelsForm .acessa_widget_block p {
         font-size: 20px;
