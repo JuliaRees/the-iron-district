@@ -182,6 +182,10 @@ body .widgetHotelsForm .acessa_widget_block p {
     padding-top: 50%;
 }  
 
+.bg-adjust {
+    background-position: 50% 50%;
+}
+
 @media (min-width: 365px) {
     .booking-widget-container {
         padding-bottom: 10%;
@@ -201,12 +205,27 @@ body .widgetHotelsForm .acessa_widget_block p {
     .padding-header {
         padding-top: 40%;
     }   
+    .custom-height {
+        height: 532px;
+      }
+}
+
+@media (min-width: 600px) {
+    .padding-header {
+        padding-top: 28%;
+    }   
+    .custom-height {
+        height: 581px;
+      }
 }
 
 @media (min-width: 640px) {
     .widgetHotelsForm .horizontal-widget a.submit_link {
         margin-bottom: 0;
     }
+    .custom-height {
+        height: 416px;
+      }
 }
 
 @media (min-width: 767px) {
@@ -234,6 +253,12 @@ body .widgetHotelsForm .acessa_widget_block p {
     }   
 }
 
+@media (min-width: 1200px) {
+    .custom-height {
+        height: 600px;
+      } 
+}
+
 @media (min-width: 1310px) {
     .padding-header {
         padding-top: 23%;
@@ -244,6 +269,10 @@ body .widgetHotelsForm .acessa_widget_block p {
     .padding-header {
         padding-top: 20%;
     }   
+
+    .custom-height {
+        height: 700px;
+      }
 }
 
 
