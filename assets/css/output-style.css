@@ -610,10 +610,6 @@ h4 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
-.py-\[2\.5rem\] {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
 .py-\[4\%\] {
   padding-top: 4%;
   padding-bottom: 4%;
@@ -1037,10 +1033,6 @@ body .widgetHotelsForm .acessa_widget_block p {
   .md\:px-10p {
     padding-left: 10%;
     padding-right: 10%;
-  }
-  .md\:py-16 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
   }
   .md\:py-5p {
     padding-top: 5%;
