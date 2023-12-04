@@ -468,6 +468,9 @@ h4 {
 .mt-\[2\.5rem\] {
   margin-top: 2.5rem;
 }
+.ml-auto {
+  margin-left: auto;
+}
 .block {
   display: block;
 }
@@ -476,6 +479,9 @@ h4 {
 }
 .table {
   display: table;
+}
+.grid {
+  display: grid;
 }
 .hidden {
   display: none;
@@ -497,6 +503,9 @@ h4 {
 }
 .w-full {
   width: 100%;
+}
+.max-w-2xl {
+  max-width: 42rem;
 }
 .flex-col {
   flex-direction: column;
