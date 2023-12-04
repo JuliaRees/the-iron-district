@@ -150,7 +150,7 @@ seo:
         
         <div class="col-span-2 uppercase">
 
-            <form name="contact-netlify" method="POST" data-netlify="true">
+            <form name="contact" method="POST" data-netlify="true">
 
            
             <label for="_name"> Name </label>
@@ -162,6 +162,8 @@ seo:
             <label for="message"> Message </label>
             <textarea name="message" id="message" placeholder=" " class="rounded-3xl bg-[#f6f5f4]"></textarea>
             
+            <input type="hidden" name="form-name" value="contact">
+
             <input type="submit" class="submit-button " value="Send">
     
         </form>
